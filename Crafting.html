@@ -1,0 +1,252 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shakti Studio ♡</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --pink: #f5dce4;
+  --rose: #c77991;
+  --cream: #fffaf5;
+  --ink: #553c46;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--ink);
+  font-family: 'DM Sans', sans-serif;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 7%;
+  border-bottom: 1px solid #f0e5e5;
+}
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+}
+nav a {
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 13px;
+  margin-left: 16px;
+}
+.hero {
+  min-height: 82vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 65px 20px;
+  background: radial-gradient(ellipse at 50% 40%, #f9e7ec, #fffaf5 70%);
+  position: relative;
+  overflow: hidden;
+}
+.tag {
+  background: white;
+  border: 1px solid #f0d6df;
+  border-radius: 30px;
+  padding: 9px 17px;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+h1 {
+  font: 500 clamp(45px, 9vw, 86px)/1.1 'Playfair Display', serif;
+  margin: 25px 0 15px;
+}
+h1 em { color: var(--rose); }
+.hero p {
+  color: #896f79;
+  max-width: 440px;
+  line-height: 1.9;
+  font-size: 15px;
+}
+.btn {
+  display: inline-block;
+  margin-top: 23px;
+  background: var(--rose);
+  color: white;
+  padding: 15px 25px;
+  border-radius: 35px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: .25s;
+}
+.btn:hover { transform: translateY(-3px); background: #ae617a; }
+.floater {
+  position: absolute;
+  font-size: 35px;
+  opacity: .75;
+  animation: float 4s ease-in-out infinite;
+}
+.f1 { top: 20%; left: 12%; }
+.f2 { top: 32%; right: 12%; animation-delay: 1s; }
+.f3 { bottom: 15%; left: 20%; animation-delay: 2s; }
+.f4 { bottom: 20%; right: 19%; animation-delay: .5s; }
+@keyframes float {
+  0%,100% { transform: translateY(0) rotate(-8deg); }
+  50% { transform: translateY(-14px) rotate(8deg); }
+}
+section { padding: 75px 7%; }
+.heading { text-align: center; margin-bottom: 35px; }
+.heading h2 {
+  font: 500 clamp(30px, 5vw, 44px) 'Playfair Display', serif;
+  margin: 0 0 10px;
+}
+.heading p { color: #967d86; font-size: 14px; }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1050px;
+  margin: auto;
+}
+.card {
+  background: white;
+  padding: 30px 18px;
+  text-align: center;
+  border: 1px solid #f1e3e5;
+  border-radius: 22px;
+  transition: .3s;
+}
+.card:hover { transform: translateY(-7px); box-shadow: 0 12px 30px #d9b8c326; }
+.emoji { font-size: 43px; }
+.card h3 { font: 500 22px 'Playfair Display', serif; }
+.card p { font-size: 13px; line-height: 1.8; color: #967d86; }
+.note {
+  max-width: 780px;
+  margin: auto;
+  background: #f8e8ed;
+  border-radius: 28px;
+  padding: 48px 20px;
+  text-align: center;
+}
+.note h2 { font: 500 36px 'Playfair Display', serif; }
+.note p { color: #896f79; line-height: 1.8; }
+footer {
+  padding: 28px 15px;
+  text-align: center;
+  color: #967d86;
+  font-size: 12px;
+}
+.heart {
+  position: fixed;
+  pointer-events: none;
+  z-index: 10;
+  animation: pop 1s forwards;
+}
+@keyframes pop {
+  from { transform: translateY(0) scale(.5); opacity: 1; }
+  to { transform: translateY(-75px) scale(1.5); opacity: 0; }
+}
+@media(max-width:650px) {
+  nav { padding: 18px 5%; }
+  nav a { margin-left: 10px; font-size: 12px; }
+  .grid { grid-template-columns: 1fr; max-width: 380px; }
+  section { padding: 58px 6%; }
+  .f1 { left: 5%; }
+  .f2 { right: 5%; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">Shakti Studio ♡</div>
+  <div>
+    <a href="#about">Our story</a>
+    <a href="#crafts">Crafts</a>
+  </div>
+</nav>
+
+<header class="hero" id="about">
+  <span class="floater f1">🎀</span>
+  <span class="floater f2">🌷</span>
+  <span class="floater f3">🧸</span>
+  <span class="floater f4">♡</span>
+
+  <span class="tag">A LITTLE WORLD OF CREATIVITY ✧</span>
+  <h1>Made with love,<br><em>just for you.</em></h1>
+  <p>
+    Little handmade things, dreamy designs and
+    creative ideas made to bring a little extra
+    happiness into your world. ♡
+  </p>
+  <a href="#crafts" class="btn">Explore our little world ✿</a>
+</header>
+
+<section id="crafts">
+  <div class="heading">
+    <h2>Things we love ♡</h2>
+    <p>A little creativity goes a long way.</p>
+  </div>
+
+  <div class="grid">
+    <article class="card">
+      <div class="emoji">🌸</div>
+      <h3>Paper Blooms</h3>
+      <p>Pretty paper flowers and delicate handmade creations.</p>
+    </article>
+
+    <article class="card">
+      <div class="emoji">🎁</div>
+      <h3>Sweet Surprises</h3>
+      <p>Thoughtful gifts and adorable packaging for special days.</p>
+    </article>
+
+    <article class="card">
+      <div class="emoji">🧵</div>
+      <h3>DIY Magic</h3>
+      <p>Unique crafts, tiny details and ideas made with love.</p>
+    </article>
+  </div>
+</section>
+
+<section>
+  <div class="note">
+    <div style="font-size:35px">💌</div>
+    <h2>A little note for you</h2>
+    <p>
+      Every creation starts with a little idea
+      and a lot of love.<br>
+      Thank you for being part of our story. ♡
+    </p>
+    <a class="btn" href="https://instagram.com/"
+       target="_blank" rel="noopener noreferrer">
+      Say hello on Instagram ↗
+    </a>
+  </div>
+</section>
+
+<footer>
+  Made with ♡ by Shakti Studio<br><br>
+  © <span id="year"></span> · Keep creating beautiful things ✿
+</footer>
+
+<script>
+document.getElementById('year').textContent =
+  new Date().getFullYear();
+
+document.addEventListener('click', function(e) {
+  if (e.target.closest('a')) return;
+  const heart = document.createElement('span');
+  heart.className = 'heart';
+  heart.textContent = ['♡', '💕', '✿', '✨'][
+    Math.floor(Math.random() * 4)
+  ];
+  heart.style.left = e.clientX + 'px';
+  heart.style.top = e.clientY + 'px';
+  document.body.appendChild(heart);
+  setTimeout(() => heart.remove(), 1000);
+});
+</script>
+</body>
+</html>
